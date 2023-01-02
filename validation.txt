@@ -1,0 +1,80 @@
+
+
+Project 4 Validation Results
+
+Below are some validation results for you to check the correctness of
+your project 4 code.  All of the validation runs are for the FFT
+traces.  For each entry, the first line specifies the simulation
+configuration: number of cores, cache size, block size, and
+associativity.  So, for example, the "fft-2c_16384_16_1" run
+corresponds to using 2 cores, 16KB caches, block size of 16 bytes, and
+associativity of 1 (direct mapped).  The second line in each entry
+reports the number of cache accesses for each core, and the third line
+reports the number of cache misses for each core.  The fourth line in
+each entry reports the demand fetch traffic in words.  The fifth line
+in each entry reports the number of broadcasts.  And, the last line in
+each entry reports the copies back traffic in words.
+
+
+fft-2c_16384_16_1
+[3465000, 3464832]
+[968091, 735389]
+6813920
+1897519
+4985904
+
+fft-4c_16384_16_1
+[1734444, 1734230, 1734209, 1734225]
+[559864, 615974, 504619, 495800]
+8705028
+2518417
+6707592
+
+fft-8c_16384_16_1
+[869616, 869343, 869385, 869504, 869336, 869326, 869335, 869300]
+[379475, 376695, 376452, 384123, 370630, 372645, 381586, 376397]
+12072012
+3676642
+9681664
+
+fft-4c_8192_16_2
+[1734444, 1734230, 1734209, 1734225]
+[505601, 545531, 467607, 450208]
+7875788
+2518687
+6660368
+
+fft-4c_8192_16_4
+[1734444, 1734230, 1734209, 1734225]
+[501752, 539670, 460236, 445895]
+7790212
+2530261
+6650856
+
+fft-4c_8192_16_8
+[1734444, 1734230, 1734209, 1734225]
+[499794, 536701, 457855, 443570]
+7751680
+2520567
+6648692
+
+fft-4c_8192_32_1
+[1734444, 1734230, 1734209, 1734225]
+[473930, 487038, 441233, 428147]
+14642784
+2042038
+10165792
+
+fft-4c_8192_64_1
+[1734444, 1734230, 1734209, 1734225]
+[424497, 411261, 401666, 380965]
+25894224
+1772339
+17105248
+
+fft-4c_8192_128_1
+[1734444, 1734230, 1734209, 1734225]
+[408175, 385895, 390479, 366647]
+49638272
+1682828
+31335264
